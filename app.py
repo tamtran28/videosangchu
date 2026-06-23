@@ -19,8 +19,8 @@ def load_model():
 with st.spinner("Đang tải mô hình Whisper (vui lòng đợi trong giây lát)..."):
     model = load_model()
 
-# Trình tải tệp tin (hỗ trợ cả video và audio)
-uploaded_file = st.file_file_uploader(
+# Trình tải tệp tin (Đã sửa lỗi st.file_file_uploader thành st.file_uploader)
+uploaded_file = st.file_uploader(
     "Tải lên tệp video hoặc âm thanh của bạn", 
     type=["mp4", "mkv", "avi", "mov", "mp3", "wav", "m4a"]
 )
